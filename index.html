@@ -1,9 +1,29 @@
 <!DOCTYPE html>
-<html lang="CN-zh">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>染晴天</title>
+    <meta
+      data-n-head="ssr"
+      data-hid="og:site_name"
+      name="og:site_name"
+      property="og:site_name"
+      content="染晴天"
+    />
+    <meta
+      data-n-ead="ssr"
+      data-hid="description"
+      name="description"
+      content="染晴天"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="keywords"
+      name="keywords"
+      content="染晴天"
+    />
     <style>
       .flex {
         display: flex;
@@ -18,21 +38,22 @@
       .head {
         width: 100%;
         height: 1000px;
-        background-image: url(https://i.imgloc.com/2023/06/27/VrCRUq.jpeg);
+        background-color: bisque;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0 0;
+        z-index: 1;
       }
       .id {
         color: white;
         font-size: 60px;
-        text-shadow: 2px 2px 5px black;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         margin: 8px;
       }
       .text {
         color: white;
         font-size: 15px;
-        text-shadow: 5px 5px 10px black;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       }
       .icon {
         width: 80px;
