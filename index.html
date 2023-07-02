@@ -35,10 +35,13 @@
         justify-content: center;
         align-items: center;
       }
+      .center-a {
+        align-items: center;
+      }
       .head {
         width: 100%;
         height: 1000px;
-        background-color: bisque;
+        background-color: rgb(125, 125, 125);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -58,26 +61,46 @@
       .icon {
         width: 80px;
         height: 80px;
-        background-image: url(https://i.imgloc.com/2023/06/27/VNaBcy.jpeg);
+        background-color: black;
         background-size: cover;
         border-radius: 50px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 1px;
       }
+      .icon-c {
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        border: 1px solid white;
+        margin: 5px;
+      }
+      .icon-x {
+        margin: 5px;
+      }
+      .icon-x-h {
+        width: 25px;
+        height: 1px;
+        background-color: white;
+      }
+      .icon-x-w {
+        width: 1px;
+        height: 25px;
+        background-color: white;
+      }
       .neirong {
         width: 1000px;
-        height: 800px;
         background-color: rgb(255, 255, 255);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 1px;
+        padding-top: 50px;
+        padding-bottom: 50px;
       }
       .page {
         width: 800px;
-        height: 600px;
         margin: 8px;
       }
       .footer {
         width: 100%;
         height: 100px;
-        background-color: rgba(171, 171, 171, 0.5);
+        background-color: rgba(0, 50, 50);
         z-index: 1;
       }
       a:link {
@@ -86,7 +109,7 @@
         font-size: 10px;
       }
       a:visited {
-        color: whitesmoke;
+        color: rgb(200, 200, 200);
       }
       a:hover {
         color: rgb(0, 0, 0);
@@ -96,12 +119,12 @@
       }
       .footer-text {
         font-size: 10px;
-        color: whitesmoke;
+        color: rgb(200, 200, 200);
       }
       .shuxian {
         width: 2px;
         height: 8px;
-        background-color: whitesmoke;
+        background-color: rgb(200, 200, 200);
         margin: 8px;
       }
       .down {
@@ -109,6 +132,9 @@
       }
       p {
         text-indent: 2em;
+      }
+      .rotated {
+        transform: rotate(45deg);
       }
     </style>
   </head>
@@ -118,7 +144,14 @@
       <!-- 内容 -->
       <div class="flex column center">
         <!-- 头像 -->
-        <div class="icon"></div>
+        <div class="icon flex center">
+          <div class="icon-c"></div>
+          <div class="icon-x flex center rotated">
+            <div class="icon-x-h flex center">
+              <div class="icon-x-w"></div>
+            </div>
+          </div>
+        </div>
         <!-- id -->
         <div class="id">染晴天</div>
         <!-- 择言 -->
@@ -126,7 +159,7 @@
       </div>
     </div>
     <!-- 内容 -->
-    <div class="neirong flex column center">
+    <div class="neirong flex column center-a">
       <div class="page">
         <h1>你或许曾经反省过</h1>
         <hr />
@@ -145,6 +178,20 @@
         <p>
           但他不会再来了，你我都很清楚，不是同一只土拨鼠，也不是同一个春天。
         </p>
+      </div>
+      <div class="page">
+        <h1>设想了千百遍</h1>
+        <hr />
+        <p>
+          可是终究什么都无法改变，为什么要沉醉在无聊的过去呢，是因为痛苦还是因为恐惧。明明期待着改变，却又像顽固的藤壶一样停留在原地，扎根在贫瘠的思想上，哀嚎着痛苦，艳羡着自由。
+        </p>
+        <p>
+          没有人教过你什么事情，只有伤疤能铭记教训，出尔反尔，首鼠两端，只会消磨人的耐心，等到一切尘埃落定，便什么都没有了。
+        </p>
+        <p>
+          不是每一滴水都能到达大海，但至少曾经见过，经历过，不至于在黄土飞扬的时候连一句话也说不出，只能尴尬的笑着，也不知是在笑什么。
+        </p>
+        <p>你已经为过去的自己付出了太多，是时候为未来的自己想想了。</p>
       </div>
     </div>
     <!-- 底部 -->
